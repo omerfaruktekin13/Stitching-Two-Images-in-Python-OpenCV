@@ -1,35 +1,31 @@
 # Stitching Two Images in Python OpenCV
-Combining two images with the calculation of the squared difference values and creating a path for stitching.
+
 ## Project Media
-![Dxxxxx](https://github.com/omerfaruktekin13/5-Bar-Parallel-Robot/blob/main/media/5bargif.gif "Deneme ")
+![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/e.jpg "Deneme ")
 |:--:|
-| *5 Bar Parallel Robot Diagram* |
-![Dxxxxx](https://github.com/omerfaruktekin13/5-Bar-Parallel-Robot/blob/main/media/5_bar.png "Deneme ")
-| *Simulink Simscape Model* |
-![Dxxxxx](https://github.com/omerfaruktekin13/5-Bar-Parallel-Robot/blob/main/media/simulink_model.png "Deneme ") 
-| *Simulink Diagram* |
-![Dxxxxx](https://github.com/omerfaruktekin13/5-Bar-Parallel-Robot/blob/main/media/base.png "Deneme ") 
-| *Solidworks Base Drawing* |
-![Dxxxxx](https://github.com/omerfaruktekin13/5-Bar-Parallel-Robot/blob/main/media/link.png "Deneme ") 
-| *Solidworks Link Drawing* |
+| *Final Result* |
+![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/a.jpg "Deneme ")
+| *Left Part of the Image (Gondor from LOTR) * |
+![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/b.png "Deneme ")
+| *Right Part of the Image (Rohan from LOTR)* |
+![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/c.jpg "Deneme ")
+| *Calculated Stitch Path* |
+![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/d.jpg "Deneme ")
+| *Stitched Image Before Filters* |
 
 ## Description
-5 bar mechanism is an efficient and simple design to observe human-robot interactions. As an actuator, brushless DC Motors or stepper motors can be chosen. This project is generally used to observe the human-robot relationship. Thanks to MATLAB/Simscape, I created the parts I drew in Solidworks with Simulink diagram and solved them to the system by using the movements of the joints that are connected to each other as input. The torque in the joints was calculated automatically and I introduced the mouse to the system as analog thanks to Simulink Desktop Real-Time Toolbox. By converting the linear movements of the mouse to angular movements, I made the end-effector of the 5 Bar Parallel Robot follow the mouse. The angle at each joint was calculated by the system using inverse kinematics equations. There are also equations of forward and backward kinematic movements in the .m file.
+I want to share an algorithm: "Stitching Images with Calculation of Squared Difference of the Pixels." Briefly, the methodology calculates the smallest squared difference of the overlapped pixels in grayscale and creates a path in the way you choose. I used Minas Tirith (Gondor Castle) and Rohan images to test my algorithm which is written in Python and OpenCV. The second and third images represent the original images from the Lord of the Rings movies. The fourth one depicts the calculated seam path by the algorithm in grayscale and the last image is the result in an RGB color map. I added median blur to decrease the sharp-cutting places of the images to the final result and show it in grayscale (first image). In the end, we have a perfect image that Gandalf riding his Shadowfax between two mankind towns in Middle Earth. 
 
 ## Tools and Languages
-<a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a>
-<p> * MATLAB 2023a </p>
-<p> * Simulink </p>
-<p> * Simscape Multibody </p>
-<p> * Simulink Desktop Real-Time </p>
-<a href="https://www.solidworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/tr/7/75/SolidWorks_Logo.png" alt="matlab" width="150" height="40"/> </a>
-<p> 
-<p> * Solidworks 2021 (If you want to edit the structure of the mechanism.) </p>
+<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
+<p> * Python3 </p>
+<p> * OpenCV </p>
+<p> * Jupyter Notebook or any suitable integrated development environment (IDE) </p>
 
 ## Installation
-> 1. Download 2R folder, 5Bar_m_.m and 5bar_Sim.slx files.
-> 2. Put these files into your MATLAB folder which is located in Documents.
-> 3. Open the .m file and Simulink model. Then evaluate the first section of .m file.
-> 4. Play Simulink model and you will see the Simscape model.
-> 5. The end-effector of the mechanism will be controlled by your mouse.
-> 6. Enjoy!
+> 1. Download Stitching.py file
+> 2. Use your own images and change the image path in the code
+> 3. Try other overlapping sizes to observe changes in your combined image.
+
+## Open to Development
+Please share your comments and ideas about the project with me. Thank you for your time.
