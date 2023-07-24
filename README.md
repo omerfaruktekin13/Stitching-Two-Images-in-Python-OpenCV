@@ -5,7 +5,7 @@
 |:--:|
 | *Final Result* |
 ![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/a.jpg "Deneme ")
-| *Left Part of the Image (Gondor from LOTR) * |
+| *Left Part of the Image (Gondor from LOTR)* |
 ![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/b.png "Deneme ")
 | *Right Part of the Image (Rohan from LOTR)* |
 ![Dxxxxx](https://github.com/omerfaruktekin13/Stitching-Two-Images-in-Python-OpenCV/blob/main/Media/c.jpg "Deneme ")
